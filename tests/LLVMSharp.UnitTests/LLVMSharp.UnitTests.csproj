@@ -10,7 +10,15 @@
     <!-- CA1711: Identifiers should not have incorrect suffix -->
     <!-- CA1724: Type names should not match namespaces -->
     <NoWarn>$(NoWarn);CA1707;CA1711;CA1724</NoWarn>
+    <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
+    <RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+    <EnforceCodeStyleInBuild>False</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>False</EnableNETAnalyzers>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="libLLVM" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\sources\LLVMSharp\ishtar.llvm.csproj" />
