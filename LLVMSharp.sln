@@ -15,7 +15,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Build.targets = Directory.Build.targets
 		Directory.Packages.props = Directory.Packages.props
 		exclusion.dic = exclusion.dic
-		global.json = global.json
 		LICENSE.md = LICENSE.md
 		NOTICE.md = NOTICE.md
 		NuGet.config = NuGet.config
@@ -35,7 +34,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sources", "sources", "{62B5
 		sources\Directory.Build.targets = sources\Directory.Build.targets
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LLVMSharp", "sources\LLVMSharp\LLVMSharp.csproj", "{B4D577B6-47B7-494B-9590-80247F14F2E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ishtar.llvm", "sources\LLVMSharp\ishtar.llvm.csproj", "{B4D577B6-47B7-494B-9590-80247F14F2E7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5E2DA015-A829-4304-9B2F-B868ECB77A95}"
 	ProjectSection(SolutionItems) = preProject
@@ -55,38 +54,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{9BF3
 		scripts\SignClientSettings.json = scripts\SignClientSettings.json
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "packages", "packages", "{CD611531-75EA-4328-8C25-8D0496E61EC2}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libLLVM", "libLLVM", "{9D46FF1C-E09F-4063-A97D-C09F26310B67}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libLLVM", "libLLVM", "{568A07AC-AF60-4A3E-ABD3-2B51D9DD4EBF}"
-	ProjectSection(SolutionItems) = preProject
-		packages\libLLVM\libLLVM\libLLVM.nuspec = packages\libLLVM\libLLVM\libLLVM.nuspec
-		packages\libLLVM\libLLVM\LICENSE.TXT = packages\libLLVM\libLLVM\LICENSE.TXT
-		packages\libLLVM\libLLVM\runtime.json = packages\libLLVM\libLLVM\runtime.json
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libLLVM.runtime.linux-arm64", "libLLVM.runtime.linux-arm64", "{16539CB8-8AC7-4AD0-9D54-8EE615B2FCF3}"
-	ProjectSection(SolutionItems) = preProject
-		packages\libLLVM\libLLVM.runtime.linux-arm64\libLLVM.runtime.linux-arm64.nuspec = packages\libLLVM\libLLVM.runtime.linux-arm64\libLLVM.runtime.linux-arm64.nuspec
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libLLVM.runtime.osx-x64", "libLLVM.runtime.osx-x64", "{D4550E5E-9485-4480-B2B6-9503EEC935BF}"
-	ProjectSection(SolutionItems) = preProject
-		packages\libLLVM\libLLVM.runtime.osx-x64\libLLVM.runtime.osx-x64.nuspec = packages\libLLVM\libLLVM.runtime.osx-x64\libLLVM.runtime.osx-x64.nuspec
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libLLVM.runtime.win-x64", "libLLVM.runtime.win-x64", "{E785DDD0-B9CD-4412-8A3C-4E65C601168C}"
-	ProjectSection(SolutionItems) = preProject
-		packages\libLLVM\libLLVM.runtime.win-x64\libLLVM.runtime.win-x64.nuspec = packages\libLLVM\libLLVM.runtime.win-x64\libLLVM.runtime.win-x64.nuspec
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libLLVM.runtime.win-arm64", "libLLVM.runtime.win-arm64", "{19DB05E9-59B6-45E9-B47D-62913F7DF9A8}"
-	ProjectSection(SolutionItems) = preProject
-		packages\libLLVM\libLLVM.runtime.win-arm64\libLLVM.runtime.win-arm64.nuspec = packages\libLLVM\libLLVM.runtime.win-arm64\libLLVM.runtime.win-arm64.nuspec
-	EndProjectSection
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LLVMSharp.Interop", "sources\LLVMSharp.Interop\LLVMSharp.Interop.csproj", "{CEA0F0C9-DF25-446B-8F55-FB629BD1D3E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ishtar.llvm.interop", "sources\LLVMSharp.Interop\ishtar.llvm.interop.csproj", "{CEA0F0C9-DF25-446B-8F55-FB629BD1D3E6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{E8ADE5A7-4363-43B7-B104-6B0E5510CAF0}"
 EndProject
@@ -95,15 +63,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 		.github\workflows\ci.yml = .github\workflows\ci.yml
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libLLVM.runtime.linux-x64", "libLLVM.runtime.linux-x64", "{C8508256-2EC1-4C88-B61D-AFB86569FBCD}"
-	ProjectSection(SolutionItems) = preProject
-		packages\libLLVM\libLLVM.runtime.linux-x64\libLLVM.runtime.linux-x64.nuspec = packages\libLLVM\libLLVM.runtime.linux-x64\libLLVM.runtime.linux-x64.nuspec
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kaleidoscope", "samples\KaleidoscopeTutorial\Chapter3\Kaleidoscope\Kaleidoscope.csproj", "{D27EBCA1-AA49-46BD-B9C3-FDAC5858EAD9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libLLVM.runtime.osx-arm64", "libLLVM.runtime.osx-arm64", "{3870145D-F6DC-4082-A3F5-2316D49ADD43}"
-	ProjectSection(SolutionItems) = preProject
-		packages\libLLVM\libLLVM.runtime.osx-arm64\libLLVM.runtime.osx-arm64.nuspec = packages\libLLVM\libLLVM.runtime.osx-arm64\libLLVM.runtime.osx-arm64.nuspec
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KaleidoscopeLLVM", "samples\KaleidoscopeTutorial\Chapter3\KaleidoscopeLLVM\KaleidoscopeLLVM.csproj", "{A6F6EE4E-B036-4335-AEA7-8BBA9E339116}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +85,14 @@ Global
 		{CEA0F0C9-DF25-446B-8F55-FB629BD1D3E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEA0F0C9-DF25-446B-8F55-FB629BD1D3E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEA0F0C9-DF25-446B-8F55-FB629BD1D3E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D27EBCA1-AA49-46BD-B9C3-FDAC5858EAD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D27EBCA1-AA49-46BD-B9C3-FDAC5858EAD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D27EBCA1-AA49-46BD-B9C3-FDAC5858EAD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D27EBCA1-AA49-46BD-B9C3-FDAC5858EAD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6F6EE4E-B036-4335-AEA7-8BBA9E339116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6F6EE4E-B036-4335-AEA7-8BBA9E339116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6F6EE4E-B036-4335-AEA7-8BBA9E339116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6F6EE4E-B036-4335-AEA7-8BBA9E339116}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -130,16 +100,10 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B4D577B6-47B7-494B-9590-80247F14F2E7} = {62B5C536-C224-4EE1-972F-05F732B5980B}
 		{293C5F55-2CB1-4398-946B-8AD8E37D7FEE} = {5E2DA015-A829-4304-9B2F-B868ECB77A95}
-		{9D46FF1C-E09F-4063-A97D-C09F26310B67} = {CD611531-75EA-4328-8C25-8D0496E61EC2}
-		{568A07AC-AF60-4A3E-ABD3-2B51D9DD4EBF} = {9D46FF1C-E09F-4063-A97D-C09F26310B67}
-		{16539CB8-8AC7-4AD0-9D54-8EE615B2FCF3} = {9D46FF1C-E09F-4063-A97D-C09F26310B67}
-		{D4550E5E-9485-4480-B2B6-9503EEC935BF} = {9D46FF1C-E09F-4063-A97D-C09F26310B67}
-		{E785DDD0-B9CD-4412-8A3C-4E65C601168C} = {9D46FF1C-E09F-4063-A97D-C09F26310B67}
-		{19DB05E9-59B6-45E9-B47D-62913F7DF9A8} = {9D46FF1C-E09F-4063-A97D-C09F26310B67}
 		{CEA0F0C9-DF25-446B-8F55-FB629BD1D3E6} = {62B5C536-C224-4EE1-972F-05F732B5980B}
 		{706334B8-BB91-49A4-BC9C-DFFDF3DCD770} = {E8ADE5A7-4363-43B7-B104-6B0E5510CAF0}
-		{C8508256-2EC1-4C88-B61D-AFB86569FBCD} = {9D46FF1C-E09F-4063-A97D-C09F26310B67}
-		{3870145D-F6DC-4082-A3F5-2316D49ADD43} = {9D46FF1C-E09F-4063-A97D-C09F26310B67}
+		{D27EBCA1-AA49-46BD-B9C3-FDAC5858EAD9} = {62B5C536-C224-4EE1-972F-05F732B5980B}
+		{A6F6EE4E-B036-4335-AEA7-8BBA9E339116} = {62B5C536-C224-4EE1-972F-05F732B5980B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {75550D8C-A492-4ED3-8387-206830F8B21E}

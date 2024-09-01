@@ -11,9 +11,9 @@
     <!-- CA1724: Type names should not match namespaces -->
     <NoWarn>$(NoWarn);CA1707;CA1711;CA1724</NoWarn>
   </PropertyGroup>
-  
+
   <ItemGroup>
-    <ProjectReference Include="..\..\sources\LLVMSharp\LLVMSharp.csproj" />
+    <ProjectReference Include="..\..\sources\LLVMSharp\ishtar.llvm.csproj" />
   </ItemGroup>
 
 </Project>
